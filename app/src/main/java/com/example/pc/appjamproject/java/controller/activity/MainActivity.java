@@ -1,6 +1,5 @@
 package com.example.pc.appjamproject.java.controller.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.DrawerLayout;
@@ -9,14 +8,12 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.pc.appjamproject.R;
-import com.example.pc.appjamproject.java.controller.adapter.Data;
+import com.example.pc.appjamproject.java.controller.Data.Data;
 import com.example.pc.appjamproject.java.controller.adapter.MainAdatper;
 import com.example.pc.appjamproject.java.controller.adapter.OnlineAdapter;
 import com.example.pc.appjamproject.java.controller.adapter.RecyclerAdapter;

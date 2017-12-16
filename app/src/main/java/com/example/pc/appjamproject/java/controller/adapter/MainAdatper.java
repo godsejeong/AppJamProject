@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.pc.appjamproject.R;
+import com.example.pc.appjamproject.java.controller.Data.Data;
 
 import java.util.ArrayList;
 import java.util.List;
