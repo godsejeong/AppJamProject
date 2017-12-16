@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity{
         drawbleList.setAdapter(recyclerAdapter);
         setDrawableListClickListener();
 
-
         /* 온라인 관련 */
         onlineList.setHasFixedSize(true);
         onlineList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
