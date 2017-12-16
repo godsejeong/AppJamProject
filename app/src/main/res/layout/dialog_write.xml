@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|top"
+    android:background="#1f1f1f"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog"
+        android:layout_width="344dip"
+        android:layout_height="300dip"
+        android:background="@drawable/rounded">
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <EditText
+            android:id="@+id/inputtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="아 이렇게 하는거 맞음?"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/inputimage"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/inputtext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="55dp"
+            android:background="#ffffffff" />
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_add_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_check_black_24dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="334dp"
+    android:layout_height="413dp"
+    android:weightSum="413"
+    android:background="@drawable/shape_item_background"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:weightSum="344"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/postsProfileImg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="Suspicious0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="52"/>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="284"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/postsNameTv"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                tools:text="배현빈"
+                />
+
+                <TextView
+                    android:id="@+id/postsTeacherTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#aeaeae"
+                    tools:text="1학년 6반 담임교사"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    <TextView
+        android:id="@+id/postsContentTv"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="adsf"
+        android:textColor="#464646"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="153">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/postsImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="168"
+        android:layout_marginTop="21dp"
+        />
+
+    <TextView
+        android:id="@+id/postsTimeTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="32"
+        android:text="21:05"
+        android:textSize="12sp"
+        android:textColor="#aeaeae"
+        android:gravity="center|right"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

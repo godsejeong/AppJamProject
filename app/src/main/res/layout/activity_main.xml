@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.pc.appjamproject.java.controller.activity.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/mainDrawer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="640"
+            android:background="@color/background"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape_item_background"
+                >
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainRcv"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_item_background"
+                android:layout_weight="520">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="63"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#ffffff">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="4dp"
+                android:background="@drawable/shape_image"/>
+            <TextView
+                android:id="@+id/wrText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#464646"
+                android:text="새 글 작성하기"
+                android:layout_marginTop="6dp"
+                android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="242dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|start"
+            android:background="#ffffff"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:weightSum="616">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="57"
+                android:orientation="horizontal"
+                android:weightSum="242">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="22" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="57">
+
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="left|top"
+                        android:background="#000000" />
+
+                    <View
+
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="right|bottom"
+                        android:background="@drawable/retangle_online" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="156"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:text="배현빈"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/userDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:text="1학년 6반 담임교사"
+                        android:textColor="#aeaeae"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"/>
+            <LinearLayout
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="39"
+                android:orientation="horizontal"
+                android:weightSum="242">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/profile_fix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="프로필 편집"
+                    android:textSize="14sp"
+                    android:textColor="#4a4a4a"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"/>
+
+            <LinearLayout
+                android:layout_weight="449"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/drawerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:textColor="#1f1f1f"
+                    android:text="온라인"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/onlineList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            app:titleTextColor="#ffffff"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mainScrool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+        android:fillViewport="true">
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

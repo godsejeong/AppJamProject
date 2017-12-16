@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="242dp"
+    android:layout_height="34dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_weight="49"
+        android:gravity="center"
+
+        android:textSize="14sp"
+        android:textColor="#9b9b9b"
+        android:text="Test"
+        android:id="@+id/testTv"/>
+
+</LinearLayout>
